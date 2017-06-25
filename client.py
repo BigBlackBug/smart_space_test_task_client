@@ -1,10 +1,9 @@
-# SERVER_URL = "http://multiplier.bigblackbug.me:8080"
 import os
 import time
 
 import requests
 
-SERVER_URL = os.environ.get("SERVER_URL", "http://localhost:8080")
+SERVER_URL = os.environ.get("SERVER_URL", "http://multiplier.bigblackbug.me")
 
 
 def multiply(first, second):
