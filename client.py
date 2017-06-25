@@ -3,7 +3,7 @@ import time
 
 import requests
 
-SERVER_URL = os.environ.get("SERVER_URL", "http://multiplier.bigblackbug.me")
+SERVER_URL = os.environ.get("SERVER_URL", "https://multiplier.bigblackbug.me")
 
 
 def multiply(first, second):
