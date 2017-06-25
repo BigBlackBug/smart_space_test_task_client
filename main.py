@@ -12,10 +12,10 @@ def _make_matrix(rows, cols, generator=lambda: random.randint(1, 10)):
 
 def _generate_matrices(max_size):
     print("Generating matrices")
-    rows_1 = random.randint(0, max_size)
-    cols_1 = random.randint(0, max_size)
+    rows_1 = random.randint(1, max_size)
+    cols_1 = random.randint(1, max_size)
     rows_2 = cols_1
-    cols_2 = random.randint(0, max_size)
+    cols_2 = random.randint(1, max_size)
 
     d_1 = (rows_1, cols_1)
     d_2 = (rows_2, cols_2)
@@ -26,9 +26,9 @@ def _generate_matrices(max_size):
 if __name__ == '__main__':
     parser = ArgumentParser(description='Multiply matrices')
     parser.add_argument("-n", type=int, default=5,
-                        help="The number of pairs of matrices to multiply")
+                        help="number of pairs of matrices to multiply")
     parser.add_argument("-s", "--size", type=int, default=50,
-                        help="Maximum matrix size")
+                        help="maximum matrix size")
     args = parser.parse_args()
     if args.n < 1:
         print("N must be greater than 0")
