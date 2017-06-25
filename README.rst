@@ -6,12 +6,12 @@
 --------
 Клиент для сервиса перемножения матриц. Адрес сервиса задаётся переменной окружения SERVER_URL.
 
-По дефолту - ``http://multiplier.bigblackbug.me``
+По дефолту - ``https://multiplier.bigblackbug.me``
 
 Запуск
 ------
 
-``main.py [-h] [-n N] [-s SIZE]``
+``python main.py [-h] [-n N] [-s SIZE]``
 
 Параметры:
   -h, --help            хэлп
