@@ -17,10 +17,10 @@ def _generate_matrices(max_size):
     rows_2 = cols_1
     cols_2 = random.randint(1, max_size)
 
-    d_1 = (rows_1, cols_1)
-    d_2 = (rows_2, cols_2)
-    print("Submitting matrix multiplication {}x{} to {}x{}".format(*d_1, *d_2))
-    return _make_matrix(*d_1), _make_matrix(*d_2)
+    size_1 = (rows_1, cols_1)
+    size_2 = (rows_2, cols_2)
+    print("Submitting matrix multiplication {}x{} to {}x{}".format(*size_1, *size_2))
+    return _make_matrix(*size_1), _make_matrix(*size_2)
 
 
 if __name__ == '__main__':
